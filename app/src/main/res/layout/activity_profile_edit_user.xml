@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileEditUserActivity">
+    <RelativeLayout
+        android:id="@+id/toolbarRL"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/shape_rect01"
+        android:padding="10dp">
+
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@null"
+            android:src="@drawable/ic_back_white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Edit Profile"
+            android:textColor="@color/colorWhite01"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/SgpsBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:background="@null"
+            android:src="@drawable/ic_gps_white" />
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/profileIv"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/toolbarRL"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/shape_circle01"
+        android:src="@drawable/ic_person_gray" />
+    <EditText
+        android:id="@+id/nameEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profileIv"
+        android:layout_margin="5dp"
+        android:drawableStart="@drawable/ic_person_gray"
+        android:background="@drawable/shape_rect02"
+        android:drawablePadding="5dp"
+        android:hint="Full name"
+        android:inputType="textPersonName|textCapWords"
+        android:padding="10dp"
+        android:layout_marginTop="15dp"/>
+    <EditText
+        android:id="@+id/phoneEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nameEt"
+        android:layout_margin="5dp"
+        android:background="@drawable/shape_rect02"
+        android:drawableStart="@drawable/ic_phone_gray"
+        android:drawablePadding="5dp"
+        android:hint="Phone number"
+        android:inputType="phone"
+        android:padding="10dp"
+        android:layout_marginTop="15dp"/>
+
+    <LinearLayout
+        android:id="@+id/addressl1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phoneEt"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/countryEt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/shape_rect02"
+            android:drawableStart="@drawable/ic_location_gray"
+            android:drawablePadding="5dp"
+            android:layout_weight="1"
+            android:hint="Country"
+            android:inputType="textPostalAddress"
+            android:padding="10dp" />
+        <EditText
+            android:id="@+id/stateEt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/shape_rect02"
+            android:drawableStart="@drawable/ic_location_gray"
+            android:drawablePadding="5dp"
+            android:layout_weight="1"
+            android:hint="State"
+            android:inputType="textPostalAddress"
+            android:padding="10dp" />
+        <EditText
+            android:id="@+id/cityEt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/shape_rect02"
+            android:drawableStart="@drawable/ic_location_gray"
+            android:drawablePadding="5dp"
+            android:layout_weight="1"
+            android:hint="city"
+            android:inputType="textPostalAddress"
+            android:padding="10dp" />
+
+    </LinearLayout>
+    <EditText
+        android:id="@+id/addressEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addressl1"
+        android:layout_margin="5dp"
+        android:background="@drawable/shape_rect02"
+        android:drawableStart="@drawable/ic_location_gray"
+        android:drawablePadding="5dp"
+        android:hint="full address"
+        android:inputType="textPostalAddress"
+        android:padding="10dp"
+        android:layout_marginTop="15dp"/>
+    <Button
+        android:id="@+id/updateBtn"
+        android:layout_below="@+id/addressEt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:text="Update"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

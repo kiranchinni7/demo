@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_below="@+id/iconIv"
+        android:textSize="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorWhite01"
+        android:text="Fireworks app" />
+
+    <ImageView
+        android:id="@+id/iconIv"
+        android:layout_width="358dp"
+        android:layout_height="358dp"
+        android:layout_centerInParent="true"
+        app:srcCompat="@drawable/fireworks"
+        tools:src="@drawable/fireworks"
+        tools:srcCompat="@drawable/fireworks" />
+
+</RelativeLayout>
