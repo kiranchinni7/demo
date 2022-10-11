@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.activities;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,6 +14,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.demo.R;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.AuthResult;
@@ -37,12 +38,15 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
         emailEt= findViewById(R.id.emailEt);
         passwordEt=findViewById(R.id.passwordEt);
         noAccountTv1=findViewById(R.id.noAccountTv1);
         forgotTv=findViewById(R.id.forgotTv);
         loginBtn=findViewById(R.id.loginBtn);
+
         firebaseAuth=FirebaseAuth.getInstance();
+
         progressDialog=new ProgressDialog(this);
         progressDialog.setTitle("please wait");
         progressDialog.setCanceledOnTouchOutside(false);

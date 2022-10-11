@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ProfileEditSellerActivity">
+    tools:context=".activities.ProfileEditSellerActivity">
 
     <RelativeLayout
         android:id="@+id/toolbarRL"
@@ -30,7 +30,7 @@
             android:textStyle="bold" />
 
         <ImageButton
-            android:id="@+id/SgpsBtn"
+            android:id="@+id/gpsBtn"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_alignParentEnd="true"
@@ -38,22 +38,23 @@
             android:src="@drawable/ic_gps_white" />
     </RelativeLayout>
 
-    <ImageView
-        android:id="@+id/profileIv"
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/EprofileIv"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:layout_marginTop="20dp"
         android:layout_below="@+id/toolbarRL"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
         android:layout_marginBottom="40dp"
         android:background="@drawable/shape_circle01"
-        android:src="@drawable/ic_person_gray" />
+        android:src="@drawable/ic_person_gray"
+        app:civ_border_width="2dp" />
 
     <EditText
-        android:id="@+id/nameEt"
+        android:id="@+id/EnameEt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/profileIv"
+        android:layout_below="@+id/EprofileIv"
         android:drawableStart="@drawable/ic_person_gray"
         android:layout_marginStart="5dp"
         android:layout_marginTop="5dp"
@@ -66,10 +67,11 @@
         android:padding="10dp" />
 
     <EditText
-        android:id="@+id/shopNameEt"
+
+        android:id="@+id/EshopNameEt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/nameEt"
+        android:layout_below="@+id/EnameEt"
         android:layout_marginStart="5dp"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="5dp"
@@ -82,10 +84,10 @@
         android:padding="10dp" />
 
     <EditText
-        android:id="@+id/phoneEt"
+        android:id="@+id/EphoneEt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/shopNameEt"
+        android:layout_below="@+id/EshopNameEt"
         android:layout_marginStart="5dp"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="5dp"
@@ -98,10 +100,10 @@
         android:padding="10dp" />
 
     <EditText
-        android:id="@+id/deliveryFeeEt"
+        android:id="@+id/EdeliveryFeeEt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/phoneEt"
+        android:layout_below="@+id/EphoneEt"
         android:layout_marginStart="5dp"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="5dp"
@@ -114,14 +116,14 @@
         android:padding="10dp" />
 
     <LinearLayout
-        android:id="@+id/addressl1"
+        android:id="@+id/Eaddressl1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/deliveryFeeEt"
+        android:layout_below="@+id/EdeliveryFeeEt"
         android:orientation="horizontal">
 
         <EditText
-            android:id="@+id/countryEt"
+            android:id="@+id/EcountryEt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
@@ -133,7 +135,7 @@
             android:inputType="textPostalAddress"
             android:padding="10dp" />
         <EditText
-            android:id="@+id/stateEt"
+            android:id="@+id/EstateEt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
@@ -145,7 +147,7 @@
             android:inputType="textPostalAddress"
             android:padding="10dp" />
         <EditText
-            android:id="@+id/cityEt"
+            android:id="@+id/EcityEt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
@@ -158,26 +160,39 @@
             android:padding="10dp" />
 
     </LinearLayout>
+
     <EditText
-        android:id="@+id/addressEt"
+        android:id="@+id/EaddressEt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/addressl1"
-        android:layout_margin="5dp"
+        android:layout_below="@+id/Eaddressl1"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
         android:background="@drawable/shape_rect02"
         android:drawableStart="@drawable/ic_location_gray"
         android:drawablePadding="5dp"
-        android:hint="full address"
-        android:inputType="textPostalAddress"
-        android:padding="10dp"
-        android:layout_marginTop="15dp"/>
+        android:hint="Full address"
+        android:inputType="textPostalAddress|textMultiLine"
+        android:padding="10dp" />
 
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/EshopOpenSwitch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EaddressEt"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="shop open" />
     <Button
-        android:id="@+id/updateBtn"
+        android:id="@+id/EupdateBtn"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/addressEt"
+        android:layout_below="@+id/EshopOpenSwitch"
         android:layout_centerHorizontal="true"
         android:text="Update" />
 

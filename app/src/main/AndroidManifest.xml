@@ -20,38 +20,39 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Demo"
         tools:targetApi="31">
+
         <activity
-            android:name=".ProfileEditSellerActivity"
+            android:name=".activities.ShopDetailsActivity"
             android:exported="false" />
         <activity
-            android:name=".ProfileEditUserActivity"
+            android:name=".activities.AddProductActivity"
             android:exported="false" />
         <activity
-            android:name=".EditProduct"
+            android:name=".activities.ProfileEditSellerActivity"
             android:exported="false" />
         <activity
-            android:name=".Product_activity"
+            android:name=".activities.ProfileEditUserActivity"
             android:exported="false" />
         <activity
-            android:name=".MainSellerACtivity"
+            android:name=".activities.MainSellerACtivity"
             android:exported="false" />
         <activity
-            android:name=".MainUserActivity"
+            android:name=".activities.MainUserActivity"
             android:exported="false" />
         <activity
-            android:name=".SellerActivity"
+            android:name=".activities.SellerActivity"
             android:exported="false" />
         <activity
-            android:name=".ForgotPasswordActivity"
+            android:name=".activities.ForgotPasswordActivity"
             android:exported="false" />
         <activity
-            android:name=".RegisterUserActivity"
+            android:name=".activities.RegisterUserActivity"
             android:exported="false" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".activities.LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".activities.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -60,5 +61,4 @@
             </intent-filter>
         </activity>
     </application>
-
 </manifest>

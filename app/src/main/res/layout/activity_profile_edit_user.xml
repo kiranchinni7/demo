@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ProfileEditUserActivity">
+    tools:context=".activities.ProfileEditUserActivity">
     <RelativeLayout
         android:id="@+id/toolbarRL"
         android:layout_width="match_parent"
@@ -29,20 +29,21 @@
             android:textStyle="bold" />
 
         <ImageButton
-            android:id="@+id/SgpsBtn"
+            android:id="@+id/gpsBtn"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_alignParentEnd="true"
             android:background="@null"
             android:src="@drawable/ic_gps_white" />
     </RelativeLayout>
+
     <ImageView
         android:id="@+id/profileIv"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:layout_marginTop="20dp"
         android:layout_below="@+id/toolbarRL"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
         android:layout_marginBottom="40dp"
         android:background="@drawable/shape_circle01"
         android:src="@drawable/ic_person_gray" />
@@ -118,19 +119,22 @@
             android:padding="10dp" />
 
     </LinearLayout>
+
     <EditText
         android:id="@+id/addressEt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/addressl1"
-        android:layout_margin="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
         android:background="@drawable/shape_rect02"
         android:drawableStart="@drawable/ic_location_gray"
         android:drawablePadding="5dp"
-        android:hint="full address"
-        android:inputType="textPostalAddress"
-        android:padding="10dp"
-        android:layout_marginTop="15dp"/>
+        android:hint="Full address"
+        android:inputType="textPostalAddress|textMultiLine"
+        android:padding="10dp" />
     <Button
         android:id="@+id/updateBtn"
         android:layout_below="@+id/addressEt"

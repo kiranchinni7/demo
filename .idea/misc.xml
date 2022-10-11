@@ -3,18 +3,38 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/COED/demo/app/src/main/res/drawable/attrs.xml" value="0.1475" />
+        <entry key="..\:/Users/COED/demo/app/src/main/res/drawable/ic_add_shopping_white.xml" value="0.1" />
+        <entry key="..\:/Users/COED/demo/app/src/main/res/drawable/ic_call_gray.xml" value="0.1" />
+        <entry key="..\:/Users/COED/demo/app/src/main/res/drawable/ic_down_gray.xml" value="0.1" />
+        <entry key="..\:/Users/COED/demo/app/src/main/res/drawable/ic_edit_white.xml" value="0.1" />
         <entry key="..\:/Users/COED/demo/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.2045" />
+        <entry key="..\:/Users/COED/demo/app/src/main/res/drawable/shape_circle03.xml" value="0.1" />
+        <entry key="..\:/Users/COED/demo/app/src/main/res/drawable/shape_rect01.xml" value="0.1" />
+        <entry key="..\:/Users/COED/demo/app/src/main/res/drawable/shape_rect02.xml" value="0.1" />
+        <entry key="..\:/Users/COED/demo/app/src/main/res/drawable/shape_rect03.xml" value="0.1" />
+        <entry key="..\:/Users/COED/demo/app/src/main/res/drawable/shape_rect04.xml" value="0.1" />
+        <entry key="..\:/Users/COED/demo/app/src/main/res/drawable/shapr_rect05.xml" value="0.1" />
+        <entry key="..\:/Users/COED/demo/app/src/main/res/drawable/shapr_rect06.xml" value="0.1" />
+        <entry key="..\:/Users/COED/demo/app/src/main/res/layout/activity_add_product.xml" value="0.22" />
+        <entry key="..\:/Users/COED/demo/app/src/main/res/layout/activity_crop_image.xml" value="0.21248396750748183" />
         <entry key="..\:/Users/COED/demo/app/src/main/res/layout/activity_edit_product.xml" value="0.27291666666666664" />
-        <entry key="..\:/Users/COED/demo/app/src/main/res/layout/activity_forgot_password.xml" value="0.1" />
+        <entry key="..\:/Users/COED/demo/app/src/main/res/layout/activity_edit_seller.xml" value="0.22402736212056434" />
+        <entry key="..\:/Users/COED/demo/app/src/main/res/layout/activity_forgot_password.xml" value="0.22" />
         <entry key="..\:/Users/COED/demo/app/src/main/res/layout/activity_login.xml" value="0.11296296296296296" />
-        <entry key="..\:/Users/COED/demo/app/src/main/res/layout/activity_main.xml" value="0.25885416666666666" />
-        <entry key="..\:/Users/COED/demo/app/src/main/res/layout/activity_main_seller.xml" value="0.25" />
-        <entry key="..\:/Users/COED/demo/app/src/main/res/layout/activity_main_user.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/COED/demo/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/COED/demo/app/src/main/res/layout/activity_main_seller.xml" value="0.22" />
+        <entry key="..\:/Users/COED/demo/app/src/main/res/layout/activity_main_user.xml" value="0.1" />
         <entry key="..\:/Users/COED/demo/app/src/main/res/layout/activity_product.xml" value="0.27291666666666664" />
-        <entry key="..\:/Users/COED/demo/app/src/main/res/layout/activity_profile_edit_seller.xml" value="0.33" />
-        <entry key="..\:/Users/COED/demo/app/src/main/res/layout/activity_profile_edit_user.xml" value="0.26875" />
-        <entry key="..\:/Users/COED/demo/app/src/main/res/layout/activity_register_user.xml" value="0.25" />
-        <entry key="..\:/Users/COED/demo/app/src/main/res/layout/activity_seller.xml" value="0.1" />
+        <entry key="..\:/Users/COED/demo/app/src/main/res/layout/activity_profile_edit_seller.xml" value="0.1" />
+        <entry key="..\:/Users/COED/demo/app/src/main/res/layout/activity_profile_edit_user.xml" value="0.18661971830985916" />
+        <entry key="..\:/Users/COED/demo/app/src/main/res/layout/activity_register_user.xml" value="0.2" />
+        <entry key="..\:/Users/COED/demo/app/src/main/res/layout/activity_seller.xml" value="0.18" />
+        <entry key="..\:/Users/COED/demo/app/src/main/res/layout/activity_shop_details.xml" value="0.18" />
+        <entry key="..\:/Users/COED/demo/app/src/main/res/layout/attrs.xml" value="0.2231722958529286" />
+        <entry key="..\:/Users/COED/demo/app/src/main/res/layout/row_product_seller.xml" value="0.2564841498559078" />
+        <entry key="..\:/Users/COED/demo/app/src/main/res/layout/row_product_user.xml" value="0.33" />
+        <entry key="..\:/Users/COED/demo/app/src/main/res/layout/row_shop.xml" value="0.22402736212056434" />
       </map>
     </option>
   </component>
